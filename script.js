@@ -3,7 +3,7 @@ http.onreadystatechange=function() {
     var output=document.getElementById("albm-div");
     if(http.status==200 && http.readyState==4){
         var obj=JSON.parse(this.response);
-        for(var i=0;i<300;i++)
+        for(var i=0;i<200;i++)
         {
             output.innerHTML+=`
             <div class="card">
